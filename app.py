@@ -12,7 +12,9 @@ st.title("Tampilan Komentar YouTube (Streamlit)")
 
 # Input Video ID dan Kata yang di-filter
 Video_ID = st.text_input("Masukkan Video ID:")
-st.image("1.png") st.image("2.png") st.image("3.png") 
+st.image("1.png") 
+st.image("2.png") 
+st.image("3.png") 
 filterchoose = st.text_input("Masukkan kata yang ingin di filter:").split()
 
 # Fungsi menghitung 10 kata terbanyak
@@ -80,4 +82,5 @@ if st.button("Tampilkan Komentar"):
 
         except HttpError as e:
             st.error(f"Terjadi error API: {e}")
+
 
