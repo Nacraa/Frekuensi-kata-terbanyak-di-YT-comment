@@ -1,5 +1,4 @@
 streamlit
-streamlit-modal
 pandas
 langdetect
 google-api-python-client
