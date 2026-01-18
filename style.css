@@ -1,6 +1,25 @@
+/* Background Wallpaper */
+[data-testid="stAppViewContainer"] {
+    background-image: url("https://img.freepik.com/free-vector/gradient-blue-dynamic-lines-background_23-2148995926.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Header Paling Atas */
+header[data-testid="stHeader"] {
+    background-color: #3d587465;
+}
+
+header[data-testid="stHeader"] button,
+header[data-testid="stHeader"] svg {
+    color: white;
+}
+
+/* Header */
 .header {
     background-color: #3d5874;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px 8px 0 0;
 }
 
@@ -10,20 +29,55 @@
     margin: 0;
 }
 
+.header h6 {
+    color: white;
+    text-align: center;
+    opacity: 0.5;
+    font-style: italic;
+    font-size: 12px;
+}
+
+/* Gambar Langkah */
 .step{
     opacity: 0.5;
     font-size: 12px;
 }
 
-.st-key-black button{
-    background-color: #3d5874;
+/* Button */
+.st-key-submit button, .st-key-submit2 button{
+    background-color: rgba(17, 100, 224, 0.753);
     color: white;
 }
 
-.st-key-black button:hover{
+.st-key-submit button:hover, .st-key-submit2 button:hover{
     background-color: #9eb3de;
+    animation: pulse 0.8s infinite;
 }
 
-.stDataFrame table {
-    border: 3px solid black;
+@keyframes pulse {
+        0% {
+        box-shadow: 0 0 0 0 rgba(118, 148, 219, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(118, 148, 219, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(118, 148, 219, 0);
+    }
+}
+
+/* Thumbnail */
+.thumbnail {
+    animation: fadeUp 1s;
+}
+
+@keyframes fadeUp {
+    0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
